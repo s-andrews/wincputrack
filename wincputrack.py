@@ -27,6 +27,7 @@ def sample_cpu(file):
         with subprocess.Popen(
             ["wmic","path","Win32_PerfFormattedData_PerfProc_Process","get","Name,PercentProcessorTime"],
             stdout=subprocess.PIPE,
+            shell=False,
             encoding="UTF-8"
         ) as running_proc:
 
