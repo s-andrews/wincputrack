@@ -12,8 +12,8 @@ def main():
     while True:
         sample_cpu(log_file)
 
-        # We'll take a sample every 30 mins
-        time.sleep(60*30)
+        # We'll take a sample every 15 mins
+        time.sleep(60*15)
 
 
 def sample_cpu(file):
